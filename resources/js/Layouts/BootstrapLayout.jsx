@@ -17,16 +17,66 @@ export default function BootstrapLayout({ children }) {
             ></link>
 
             {/* navbar */}
-            <div className="container">
-                <nav className="navbar bg-body-tertiary">
-                    <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+                <div className="container">
+                    <a
+                        className="navbar-brand fw-bold d-flex align-items-center"
+                        href="#"
+                    >
+                        <i className="bi bi-box-seam me-2"></i> RepairService
+                    </a>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon" />
+                    </button>
+
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a
+                                    className="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                >
+                                    <i className="bi bi-house-door me-1"></i>{" "}
+                                    Home
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    <i className="bi bi-clipboard-check me-1"></i>{" "}
+                                    Status
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    <i className="bi bi-info-circle me-1"></i>{" "}
+                                    About
+                                </a>
+                            </li>
+                        </ul>
+
                         <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                            <input
+                                className="form-control me-2"
+                                type="search"
+                                placeholder="ค้นหา..."
+                                aria-label="Search"
+                            />
+                            <button className="btn btn-light" type="submit">
+                                <i className="bi bi-search"></i>
+                            </button>
                         </form>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
 
             {/* content */}
             <main>{children}</main>
@@ -35,14 +85,14 @@ export default function BootstrapLayout({ children }) {
             <div className="container">
                 <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                     <p className="col-md-4 mb-0 text-body-secondary">
-                        © 2024 Company, Suphachai
+                        © 2024 Company, Inc
                     </p>
                     <a
                         href="/"
                         className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
                     >
                         <i
-                            class="bi-bootstrap-fill"
+                            className="bi-bootstrap-fill"
                             style={{ fontSize: 30 }}
                         ></i>
                     </a>
