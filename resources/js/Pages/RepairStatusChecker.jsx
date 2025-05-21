@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BootstrapLayout from "@/layouts/BootstrapLayout";
 import { Head } from "@inertiajs/react";
 
+
 function RepairStatusChecker() {
     const [input, setInput] = useState(""); //เก็บหมายเลขใบซ่อมที่ผู้ใช้กรอก
     const [status, setStatus] = useState(null); //เก็บสเตตัสที่ค้นพบ
