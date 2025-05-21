@@ -1,3 +1,182 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Container กึ่งกลางหน้าจอ */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* หัวข้อใหญ่ */
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #0077cc;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid จัดการ layout ให้ responsive */
+.grid-lamps {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Card โคมไฟ */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* รูปภาพใน Card */
+.card-image {
+  width: 180%;
+  height: 290px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+/* เนื้อหาใน Card */
+.card-content {
+  padding: 10px 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  margin: 0 0 10px;
+  color: #005fa3;
+}
+
+.card-description {
+  font-size: 1rem;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  color: #3d3d3d;
+  margin-bottom: 5px;
+  min-height: 40px;
+}
+
+.card-price {
+  font-weight: 700;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-size: 1.1rem;
+  color: #0077cc;
+}
+
+.card-stock {
+  margin: 0;
+  font-weight: 600;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  color: #adadad;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between; /* price ชิดซ้าย stock ชิดขวา */
+  align-items: center;
+}
+nav {
+  background-color: #0077cc;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.font-plex-thai {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+.title {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #051118;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.ibm-plex-sans-thai-thin {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-extralight {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-light {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-regular {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-medium {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-semibold {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-sans-thai-bold {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.navbar-custom {
+  height: 100px; /* ปรับความสูงตามต้องการ เช่น 60px */
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+

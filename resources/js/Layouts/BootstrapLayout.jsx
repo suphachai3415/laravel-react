@@ -17,64 +17,18 @@ export default function BootstrapLayout({ children }) {
             ></link>
 
             {/* navbar */}
-            <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
-                <div className="container">
+            <nav
+                className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top"
+                style={{ height: "60px" }}
+            >
+                <div className="container d-flex justify-content-start align-items-center">
                     <a
-                        className="navbar-brand fw-bold d-flex align-items-center"
+                        className="navbar-brand fw-bold d-flex align-items-center fs-5"
                         href="#"
                     >
-                        <i className="bi bi-box-seam me-2"></i> RepairService
+                        <i className="bi bi-box-seam me-2 fs-4"></i>{" "}
+                        RepairService
                     </a>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span className="navbar-toggler-icon" />
-                    </button>
-
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a
-                                    className="nav-link active"
-                                    aria-current="page"
-                                    href="#"
-                                >
-                                    <i className="bi bi-house-door me-1"></i>{" "}
-                                    Home
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <i className="bi bi-clipboard-check me-1"></i>{" "}
-                                    Status
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">
-                                    <i className="bi bi-info-circle me-1"></i>{" "}
-                                    About
-                                </a>
-                            </li>
-                        </ul>
-
-                        <form className="d-flex" role="search">
-                            <input
-                                className="form-control me-2"
-                                type="search"
-                                placeholder="ค้นหา..."
-                                aria-label="Search"
-                            />
-                            <button className="btn btn-light" type="submit">
-                                <i className="bi bi-search"></i>
-                            </button>
-                        </form>
-                    </div>
                 </div>
             </nav>
 
@@ -96,48 +50,6 @@ export default function BootstrapLayout({ children }) {
                             style={{ fontSize: 30 }}
                         ></i>
                     </a>
-                    <ul className="nav col-md-4 justify-content-end">
-                        <li className="nav-item">
-                            <a
-                                href="#"
-                                className="nav-link px-2 text-body-secondary"
-                            >
-                                Home
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                href="#"
-                                className="nav-link px-2 text-body-secondary"
-                            >
-                                Features
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                href="#"
-                                className="nav-link px-2 text-body-secondary"
-                            >
-                                Pricing
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                href="#"
-                                className="nav-link px-2 text-body-secondary"
-                            >
-                                FAQs
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a
-                                href="#"
-                                className="nav-link px-2 text-body-secondary"
-                            >
-                                About
-                            </a>
-                        </li>
-                    </ul>
                 </footer>
             </div>
             {/* script */}

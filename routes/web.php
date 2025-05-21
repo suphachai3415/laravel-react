@@ -87,3 +87,7 @@ Route::get('/product', function () {
 Route::get('/product-others', function () {
     return Inertia::render('ProductOthers');
 })->name('product-others');
+
+Route::get('/lamps', function () {
+    return Inertia::render('Lamps');
+});
