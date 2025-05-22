@@ -1,0 +1,1 @@
+import{j as t}from"./app-Ba3O4wCD.js";import{T as e}from"./TemplateLayout-ClK9J4CH.js";function s(){return t.jsxs(e,{children:[t.jsx("h2",{children:"About Page"}),t.jsx("p",{children:"This is the content of the about page."})]})}export{s as default};

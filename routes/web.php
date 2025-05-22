@@ -71,7 +71,7 @@ Route::get('/list-manager', function () {
     return Inertia::render('ListManager');
 })->name('list-manager');
 
-Route::get('/infinite-scroll', function () {
+Route::get('/', function () {
     return Inertia::render('InfiniteScrollExample');
 })->name('infinite-scroll');
 

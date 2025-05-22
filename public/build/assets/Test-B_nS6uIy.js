@@ -1,1 +1,0 @@
-import{j as t,a as e}from"./app-BKfDc-EM.js";function n(){return t.jsx("button",{children:"I'm a button"})}function o(){return t.jsxs("div",{children:[t.jsx(e,{title:"Test"}),t.jsx("h1",{children:"Welcome to my app"}),t.jsx(n,{})]})}export{o as default};

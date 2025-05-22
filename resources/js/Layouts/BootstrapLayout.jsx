@@ -1,5 +1,8 @@
 import ApplicationLogo from "@/Components/ApplicationLogo";
 import { Link } from "@inertiajs/react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 export default function BootstrapLayout({ children }) {
     return (
@@ -61,3 +64,4 @@ export default function BootstrapLayout({ children }) {
         </div>
     );
 }
+

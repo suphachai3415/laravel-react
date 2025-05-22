@@ -1,1 +1,0 @@
-import{j as e}from"./app-BKfDc-EM.js";import{T as t}from"./TemplateLayout-BWFc15Gu.js";function s(){return e.jsxs(t,{children:[e.jsx("h2",{children:"Home Page"}),e.jsx("p",{children:"This is the content of the home page."})]})}export{s as default};
