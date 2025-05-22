@@ -75,7 +75,7 @@ Route::get('/', function () {
     return Inertia::render('InfiniteScrollExample');
 })->name('infinite-scroll');
 
-Route::get('/RepairStatusChecker', function () {
+Route::get('/repair-status', function () {
     return Inertia::render('RepairStatusChecker');
 })->name('RepairStatusChecker');
 

@@ -73,6 +73,11 @@
     "file": "assets/bootstrap-icons-mSm7cUeB.woff2",
     "src": "node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
   },
+  "resources/css/app.css": {
+    "file": "assets/app-aHy0rVgK.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
   "resources/js/Pages/AboutPage.jsx": {
     "file": "assets/AboutPage-DWR9G-oI.js",
     "name": "AboutPage",
